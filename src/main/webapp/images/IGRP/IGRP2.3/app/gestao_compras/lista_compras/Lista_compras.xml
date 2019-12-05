@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP-Template/images/IGRP/IGRP2.3/app/gestao_compras/lista_compras/Lista_compras.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP-Template/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Lista_compras</page>
+    <app>gestao_compras</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.gestao_compras.pages</package_db>
+        <package_html>Lista_compras</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=78</preserve_url>
+    </plsql>
+    <slide-menu file="/IGRP/images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="/IGRP/images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Lista Compras</title>
+        <sectionheader_1 type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <sectionheader_1_text type="text" name="p_sectionheader_1_text" persist="true" maxlength="4000">
+                    <value>
+                        <![CDATA[<p>Listar Compra</p>
+]]>
+                    </value>
+                </sectionheader_1_text>
+            </fields>
+        </sectionheader_1>
+        <table_1 type="table" xml-type="table" gen-type="container" gen-group="true">
+            <fields>
+                <quantidade name="p_quantidade" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Quantidade</label>
+                </quantidade>
+                <obs name="p_obs" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Obs</label>
+                </obs>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <quantidade name="p_quantidade">Totam accusantium perspiciatis</quantidade>
+                        <obs name="p_obs">Labore elit anim ipsum sit</obs>
+                    </row>
+                    <row>
+                        <quantidade name="p_quantidade">Sit voluptatem ut anim volupta</quantidade>
+                        <obs name="p_obs">Sit stract aliqua officia elit</obs>
+                    </row>
+                    <row>
+                        <quantidade name="p_quantidade">Rem iste aperiam adipiscing ac</quantidade>
+                        <obs name="p_obs">Perspiciatis unde magna perspi</obs>
+                    </row>
+                    <row>
+                        <quantidade name="p_quantidade">Magna natus dolor iste omnis</quantidade>
+                        <obs name="p_obs">Iste labore anim aperiam rem</obs>
+                    </row>
+                    <row>
+                        <quantidade name="p_quantidade">Sed anim iste natus laudantium</quantidade>
+                        <obs name="p_obs">Sed officia voluptatem sit ips</obs>
+                    </row>
+                </value>
+            </table>
+        </table_1>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

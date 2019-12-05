@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP-Template/images/IGRP/IGRP2.3/app/gestao_compras/registar_produto/Registar_produto.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP-Template/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Registar_produto</page>
+    <app>gestao_compras</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.gestao_compras.pages</package_db>
+        <package_html>Registar_produto</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=80</preserve_url>
+    </plsql>
+    <slide-menu file="/IGRP/images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="/IGRP/images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Registar Produto</title>
+        <sectionheader_1 type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <sectionheader_1_text type="text" name="p_sectionheader_1_text" persist="true" maxlength="4000">
+                    <value>
+                        <![CDATA[<p>Regista Produto</p>
+]]>
+                    </value>
+                </sectionheader_1_text>
+            </fields>
+        </sectionheader_1>
+        <toolsbar_1 type="toolsbar" xml-type="toolsbar" gen-type="menu" gen-group="">
+            <item type="specific" code="" rel="save" refresh_components="">
+                <title>Save</title>
+                <app>gestao_compras</app>
+                <page>Registar_produto</page>
+                <link>index</link>
+                <target>submit</target>
+                <img>success|fa-save</img>
+                <preview>/IGRP-Template/images/IGRP/IGRP2.3/app/gestao_compras/registar_produto/Registar_produto.xml</preview>
+            </item>
+        </toolsbar_1>
+        <produtos type="formlist" xml-type="formlist" gen-clean="true" gen-type="container" gen-group="true">
+            <fields>
+                <description name="p_description" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" desc="true">
+                    <label>Description</label>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                            <message>Favor Preencher Descrição.</message>
+                        </validation>
+                    </validations>
+                </description>
+                <reference name="p_reference" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" desc="true">
+                    <label>Reference</label>
+                    <validations>
+                        <validation>
+                            <annotation>@Size</annotation>
+                            <min>3</min>
+                            <max>10</max>
+                            <message>Referencia min 3 e max 10.</message>
+                        </validation>
+                    </validations>
+                </reference>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <description name="p_description" desc="true">Elit anim rem stract accusantium</description>
+                        <description_desc name="p_description_desc">Elit anim rem stract accusantium</description_desc>
+                        <reference name="p_reference" desc="true">Magna natus ipsum omnis labore</reference>
+                        <reference_desc name="p_reference_desc">Magna natus ipsum omnis labore</reference_desc>
+                    </row>
+                    <row>
+                        <description name="p_description" desc="true">Voluptatem unde iste stract lorem</description>
+                        <description_desc name="p_description_desc">Voluptatem unde iste stract lorem</description_desc>
+                        <reference name="p_reference" desc="true">Doloremque sit labore voluptatem anim</reference>
+                        <reference_desc name="p_reference_desc">Doloremque sit labore voluptatem anim</reference_desc>
+                    </row>
+                    <row>
+                        <description name="p_description" desc="true">Labore magna anim omnis anim</description>
+                        <description_desc name="p_description_desc">Labore magna anim omnis anim</description_desc>
+                        <reference name="p_reference" desc="true">Totam anim officia stract aliqua</reference>
+                        <reference_desc name="p_reference_desc">Totam anim officia stract aliqua</reference_desc>
+                    </row>
+                    <row>
+                        <description name="p_description" desc="true">Consectetur magna stract natus omnis</description>
+                        <description_desc name="p_description_desc">Consectetur magna stract natus omnis</description_desc>
+                        <reference name="p_reference" desc="true">Consectetur sit dolor sed ipsum</reference>
+                        <reference_desc name="p_reference_desc">Consectetur sit dolor sed ipsum</reference_desc>
+                    </row>
+                    <row>
+                        <description name="p_description" desc="true">Anim rem magna stract adipiscing</description>
+                        <description_desc name="p_description_desc">Anim rem magna stract adipiscing</description_desc>
+                        <reference name="p_reference" desc="true">Natus magna amet voluptatem deserunt</reference>
+                        <reference_desc name="p_reference_desc">Natus magna amet voluptatem deserunt</reference_desc>
+                    </row>
+                </value>
+            </table>
+        </produtos>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

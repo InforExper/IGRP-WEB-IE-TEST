@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP-Template/images/IGRP/IGRP2.3/app/gestao_veiculo/pesquisa_condutor/Pesquisa_condutor.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP-Template/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Pesquisa_condutor</page>
+    <app>gestao_veiculo</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.gestao_veiculo.pages</package_db>
+        <package_html>Pesquisa_condutor</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=90</preserve_url>
+    </plsql>
+    <slide-menu file="/IGRP/images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="/IGRP/images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Pesquisa Condutor</title>
+        <form_1 type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <nome_search name="p_nome_search" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false">
+                    <label>Nome</label>
+                    <value>Sit omnis perspiciatis natus dolor</value>
+                </nome_search>
+                <carta_conducao_search name="p_carta_conducao_search" type="text" maxlength="250" required="false" change="false" readonly="false" disabled="false" placeholder="S-002" desclabel="false" right="false">
+                    <label>Nº Carta Condução</label>
+                    <value>Rem laudantium mollit labore ipsum</value>
+                </carta_conducao_search>
+                <cni_search name="p_cni_search" type="text" maxlength="30" required="false" change="false" readonly="false" disabled="false" placeholder="28021992-F002" desclabel="false" right="false">
+                    <label>CNI</label>
+                    <value>Deserunt mollit perspiciatis a</value>
+                </cni_search>
+            </fields>
+            <tools-bar>
+                <item type="form" code="" class="info" rel="pesquisar" custom_return="true" refresh_components="">
+                    <title>Pesquisar</title>
+                    <app>gestao_veiculo</app>
+                    <page>Pesquisa_condutor</page>
+                    <link>index</link>
+                    <parameter>/IGRP-Template/images/IGRP/IGRP2.3/app/gestao_veiculo/pesquisa_condutor/Pesquisa_condutor.xml?</parameter>
+                    <target>submit_form</target>
+                    <img>info|fa-search</img>
+                    <preview>/IGRP-Template/images/IGRP/IGRP2.3/app/gestao_veiculo/pesquisa_condutor/Pesquisa_condutor.xml</preview>
+                </item>
+            </tools-bar>
+        </form_1>
+        <table_condutor type="table" xml-type="table" title="Condutores" gen-type="container" gen-group="true">
+            <fields>
+                <nome name="p_nome" type="text" maxlength="300" showLabel="true" align="left" lookup_parser="true" iskey="false" group_in="">
+                    <label>Nome</label>
+                </nome>
+                <cni name="p_cni" type="text" maxlength="300" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>CNI</label>
+                </cni>
+                <carta_conducao name="p_carta_conducao" type="text" maxlength="300" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Carta Condução</label>
+                </carta_conducao>
+                <id_condutor name="p_id_condutor" type="hidden" maxlength="30" showLabel="true" iskey="false" group_in="" java-type="int" tag="id_condutor"/>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <nome name="p_nome">Ipsum adipiscing labore consectetur lorem</nome>
+                        <cni name="p_cni">Aperiam stract magna laudantium omnis</cni>
+                        <carta_conducao name="p_carta_conducao">Doloremque aliqua deserunt officia labore</carta_conducao>
+                        <id_condutor name="p_id_condutor" tag="id_condutor">hidden-d2fb_72e6</id_condutor>
+                    </row>
+                    <row>
+                        <nome name="p_nome">Iste perspiciatis dolor officia elit</nome>
+                        <cni name="p_cni">Lorem aperiam labore ut sit</cni>
+                        <carta_conducao name="p_carta_conducao">Sit omnis rem unde ipsum</carta_conducao>
+                        <id_condutor name="p_id_condutor" tag="id_condutor">hidden-1df3_7eab</id_condutor>
+                    </row>
+                    <row>
+                        <nome name="p_nome">Doloremque dolor magna iste totam</nome>
+                        <cni name="p_cni">Officia amet ipsum voluptatem aperiam</cni>
+                        <carta_conducao name="p_carta_conducao">Sit adipiscing voluptatem sit elit</carta_conducao>
+                        <id_condutor name="p_id_condutor" tag="id_condutor">hidden-1a50_052d</id_condutor>
+                    </row>
+                    <row>
+                        <nome name="p_nome">Rem amet dolor doloremque ipsum</nome>
+                        <cni name="p_cni">Natus omnis magna mollit totam</cni>
+                        <carta_conducao name="p_carta_conducao">Sed unde labore officia stract</carta_conducao>
+                        <id_condutor name="p_id_condutor" tag="id_condutor">hidden-39fe_9cba</id_condutor>
+                    </row>
+                    <row>
+                        <nome name="p_nome">Rem elit accusantium mollit doloremque</nome>
+                        <cni name="p_cni">Unde aliqua omnis magna deserunt</cni>
+                        <carta_conducao name="p_carta_conducao">Amet aperiam adipiscing iste totam</carta_conducao>
+                        <id_condutor name="p_id_condutor" tag="id_condutor">hidden-03f4_42c2</id_condutor>
+                    </row>
+                </value>
+            </table>
+        </table_condutor>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

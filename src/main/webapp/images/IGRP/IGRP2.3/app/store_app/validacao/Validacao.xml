@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP-Template/images/IGRP/IGRP2.3/app/store_app/validacao/Validacao.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP-Template/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Validacao</page>
+    <app>store_app</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.store_app.pages</package_db>
+        <package_html>Validacao</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=128</preserve_url>
+    </plsql>
+    <slide-menu file="/IGRP/images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="/IGRP/images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Validação - Page</title>
+        <form_aprovar type="form" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <aprovar name="p_aprovar" type="select" multiple="false" tags="false" domain="VEICULO_SIM_NAO" maxlength="250" required="true" change="false" disabled="false" right="false" java-type="">
+                    <label>Aprovar</label>
+                    <list>
+                        <option/>
+                        <option>
+                            <text>Não</text>
+                            <value>N</value>
+                        </option>
+                        <option>
+                            <text>Sim</text>
+                            <value>S</value>
+                        </option>
+                    </list>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </aprovar>
+            </fields>
+        </form_aprovar>
+        <formlist_compras type="formlist" xml-type="formlist" copy="true" copy-tag="formlist_compras" copy-package-db="nosi.webapps.store_app.pages" copy-package-html="Pedido_page" title="Compras" gen-clean="true" gen-type="container" gen-group="true">
+            <fields>
+                <descricao name="p_descricao" type="text" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" desc="true">
+                    <label>Descrição</label>
+                    <validations>
+                        <validation>
+                            <annotation>@NotNull</annotation>
+                        </validation>
+                    </validations>
+                </descricao>
+                <quantidade name="p_quantidade" type="number" min="" max="" maxlength="250" required="true" change="false" readonly="false" disabled="false" placeholder="" desclabel="false" right="false" java-type="" total_col="false" total_row="false" totalrow="false" desc="true">
+                    <label>Quantidade</label>
+                </quantidade>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <descricao name="p_descricao" desc="true">Magna doloremque unde rem sit</descricao>
+                        <descricao_desc name="p_descricao_desc">Magna doloremque unde rem sit</descricao_desc>
+                        <quantidade name="p_quantidade" desc="true">161</quantidade>
+                        <quantidade_desc name="p_quantidade_desc">161</quantidade_desc>
+                    </row>
+                    <row>
+                        <descricao name="p_descricao" desc="true">Amet dolor ut laudantium sit</descricao>
+                        <descricao_desc name="p_descricao_desc">Amet dolor ut laudantium sit</descricao_desc>
+                        <quantidade name="p_quantidade" desc="true">167</quantidade>
+                        <quantidade_desc name="p_quantidade_desc">167</quantidade_desc>
+                    </row>
+                    <row>
+                        <descricao name="p_descricao" desc="true">Aperiam labore elit labore dolor</descricao>
+                        <descricao_desc name="p_descricao_desc">Aperiam labore elit labore dolor</descricao_desc>
+                        <quantidade name="p_quantidade" desc="true">210</quantidade>
+                        <quantidade_desc name="p_quantidade_desc">210</quantidade_desc>
+                    </row>
+                    <row>
+                        <descricao name="p_descricao" desc="true">Stract aliqua rem elit anim</descricao>
+                        <descricao_desc name="p_descricao_desc">Stract aliqua rem elit anim</descricao_desc>
+                        <quantidade name="p_quantidade" desc="true">212</quantidade>
+                        <quantidade_desc name="p_quantidade_desc">212</quantidade_desc>
+                    </row>
+                    <row>
+                        <descricao name="p_descricao" desc="true">Laudantium stract sed aliqua anim</descricao>
+                        <descricao_desc name="p_descricao_desc">Laudantium stract sed aliqua anim</descricao_desc>
+                        <quantidade name="p_quantidade" desc="true">23</quantidade>
+                        <quantidade_desc name="p_quantidade_desc">23</quantidade_desc>
+                    </row>
+                </value>
+            </table>
+        </formlist_compras>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>

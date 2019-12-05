@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/IGRP-Template/images/IGRP/IGRP2.3/app/xpto/home_page/Home_page.xsl" type="text/xsl"?>
+<rows>
+    <link_img>/IGRP-Template/images/IGRP/IGRP2.3</link_img>
+    <title>Dummie XML prototype</title>
+    <site>
+        <welcome_note>Oba</welcome_note>
+        <footer_note>2019 - Copyright NOSI v.190711</footer_note>
+        <user_name>Hexagon</user_name>
+        <button type="specific">
+            <title>Sair</title>
+            <app>DUA</app>
+            <page />
+            <link>#</link>
+            <target>_self</target>
+            <img>exit.png</img>
+        </button>
+    </site>
+    <page>Home_page</page>
+    <app>xpto</app>
+    <plsql>
+        <action>index</action>
+        <package_instance></package_instance>
+        <package_db>nosi.webapps.xpto.pages</package_db>
+        <package_html>Home_page</package_html>
+        <table_name></table_name>
+        <with_replace>false</with_replace>
+        <with_label>false</with_label>
+        <with_biztalk>false</with_biztalk>
+        <dynamic_menu>false</dynamic_menu>
+        <copy_menu>false</copy_menu>
+        <package_copy_db />
+        <package_copy_html />
+        <preserve_url>webapps?r=igrp/page/preserveUrl&amp;p_id=84</preserve_url>
+    </plsql>
+    <slide-menu file="/IGRP/images/IGRP/IGRP2.3/xml/IGRP-slide-menu.xml?v=2" />
+    <top_menu file="/IGRP/images/IGRP/IGRP2.3/xml/IGRP-top_menu.xml?v=2" />
+    <content>
+        <title>Home Page</title>
+        <sectionheader_1 type="sectionheader" xml-type="form" gen-type="container" gen-group="">
+            <fields>
+                <sectionheader_1_text type="text" name="p_sectionheader_1_text" persist="true" maxlength="4000">
+                    <value>
+                        <![CDATA[<p style='text-align: center;'><span style='font-size:24px;'><span style='color:#27ae60;'><span style='font-family:Trebuchet MS,Helvetica,sans-serif;'><strong>Home</strong></span></span></span></p>
+]]>
+                    </value>
+                </sectionheader_1_text>
+            </fields>
+        </sectionheader_1>
+        <table_1 type="table" xml-type="table" gen-type="container" gen-group="true">
+            <fields>
+                <table_1_text_1 name="p_table_1_text_1" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Text</label>
+                </table_1_text_1>
+                <text_1 name="p_table_1_text_1" type="text" maxlength="30" showLabel="true" align="left" lookup_parser="false" iskey="false" group_in="">
+                    <label>Text</label>
+                </text_1>
+            </fields>
+            <table>
+                <value>
+                    <row>
+                        <table_1_text_1 name="p_table_1_text_1">Amet lorem accusantium consect</table_1_text_1>
+                        <text_1 name="p_table_1_text_1">Officia accusantium sed labore</text_1>
+                    </row>
+                    <row>
+                        <table_1_text_1 name="p_table_1_text_1">Mollit amet unde aliqua magna</table_1_text_1>
+                        <text_1 name="p_table_1_text_1">Rem ut ipsum omnis lorem</text_1>
+                    </row>
+                    <row>
+                        <table_1_text_1 name="p_table_1_text_1">Amet elit totam ipsum sit</table_1_text_1>
+                        <text_1 name="p_table_1_text_1">Lorem dolor aliqua totam sit</text_1>
+                    </row>
+                    <row>
+                        <table_1_text_1 name="p_table_1_text_1">Elit anim doloremque unde lore</table_1_text_1>
+                        <text_1 name="p_table_1_text_1">Laudantium officia elit ut ist</text_1>
+                    </row>
+                    <row>
+                        <table_1_text_1 name="p_table_1_text_1">Omnis amet sit natus iste</table_1_text_1>
+                        <text_1 name="p_table_1_text_1">Sed voluptatem unde elit labor</text_1>
+                    </row>
+                </value>
+            </table>
+        </table_1>
+    </content>
+    <blockly>
+        <imports></imports>
+        <xml>
+            <block type="controller" id="controller" x="388" y="13"></block>
+        </xml>
+    </blockly>
+</rows>
