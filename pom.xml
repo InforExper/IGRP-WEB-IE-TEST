@@ -42,7 +42,7 @@
 		<apache.commons.lang3.version>3.9</apache.commons.lang3.version>
 		<apache.commons.text.version>1.7</apache.commons.text.version>
 		<apache.commons.io.version>2.6</apache.commons.io.version>
-		<apache.logging.log4j.version>2.12.0</apache.logging.log4j.version>
+		<apache.logging.log4j.version>2.13.3</apache.logging.log4j.version>
 		<apache.poi.version>4.1.0</apache.poi.version>
 		<!-- -->
 
